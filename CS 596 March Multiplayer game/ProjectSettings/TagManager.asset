@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackGround
+    uniqueID: 890248639
+    locked: 0
+  - name: Shapes
+    uniqueID: 706486477
+    locked: 0
+  - name: ShapeFaces
+    uniqueID: 4164560641
+    locked: 0
