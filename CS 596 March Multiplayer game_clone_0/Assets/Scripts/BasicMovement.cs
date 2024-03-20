@@ -18,6 +18,8 @@ public class BasicMovement : NetworkBehaviour
     [SerializeField] private float rayLength;
     [SerializeField] private bool grounded;
 
+    public AudioSource jumpClip;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -37,6 +39,7 @@ public class BasicMovement : NetworkBehaviour
         // If the player pressed space and is grounded, jump
         if (Input.GetKey(KeyCode.Space) && grounded)
         {
+            jumpClip.Play();
             rb.velocity = Vector2.up * jumpForce;
         }
     }

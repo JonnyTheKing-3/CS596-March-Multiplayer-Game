@@ -15,6 +15,10 @@ public class NetworkManagerUI : MonoBehaviour
     [SerializeField] private GameObject Goal;
     [SerializeField] private GameObject Maze;
 
+    public AudioSource click;
+    public AudioSource HostClick;
+    public AudioSource ServerClick;
+
     private void Awake()
     {
         // When button is clicked
@@ -25,6 +29,7 @@ public class NetworkManagerUI : MonoBehaviour
         // - Start server
         serverBtn.onClick.AddListener(() =>
         {
+            click.Play();
             Goal.SetActive(true);
             Maze.SetActive(true);
             gameObject.SetActive(false);
@@ -32,6 +37,7 @@ public class NetworkManagerUI : MonoBehaviour
         });
         // - Start host
         hostBtn.onClick.AddListener(() => {
+            HostClick.Play();
             Goal.SetActive(true);
             Maze.SetActive(true);
             gameObject.SetActive(false);
@@ -39,6 +45,7 @@ public class NetworkManagerUI : MonoBehaviour
         });
         // - Start client
         clientBtn.onClick.AddListener(() => { 
+            ServerClick.Play();
             Goal.SetActive(true);
             Maze.SetActive(true);
             gameObject.SetActive(false);

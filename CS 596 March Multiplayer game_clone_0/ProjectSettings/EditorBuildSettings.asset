@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 863dca1f897e4a44293c43441694f71f
   - enabled: 1
-    path: Assets/Scenes/ChoosingServer.unity
-    guid: 50ed94ee0faac4e468dae0b5cea638b5
-  - enabled: 1
     path: Assets/Scenes/MiniGame-Race.unity
     guid: 69304bc404d5c78449acca946434df86
   m_configObjects: {}

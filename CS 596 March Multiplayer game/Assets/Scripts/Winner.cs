@@ -9,8 +9,11 @@ public class Winner : MonoBehaviour
 {
     public BoxCollider2D collider;
     public GameObject GameOver;
-    private void OnTriggerEnter2D(Collider other)
+
+    public AudioSource victory;
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        victory.Play();
         GameOver.SetActive(true);
     }
 }
